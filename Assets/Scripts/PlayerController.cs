@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public float moveSpeed = 50.0f;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +13,9 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        var pos = transform.position;
+        pos.x += moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime;
+        pos.z += moveSpeed * Input.GetAxis("Vertical") * Time.deltaTime;
+        transform.position = pos;
 	}
 }
