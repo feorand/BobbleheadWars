@@ -13,14 +13,14 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Head
+  - Wall
+  - Bullet
+  - AlienHead
+  - Floor
+  - Alien
+  - Upgrade
   - 
   - 
   - 
